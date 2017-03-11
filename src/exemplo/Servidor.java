@@ -18,7 +18,7 @@ public class Servidor {
                 public void run() {
                     try {
                         System.out.println("Alguem conectou");
-                        Scanner scan = new Scanner(socket.getInputStream());
+                        Scanner scan = new Scanner(socket.getInputStream(), "utf-8");
                         while(scan.hasNext()){
                             String linha = scan.nextLine();
                             System.out.println(linha);

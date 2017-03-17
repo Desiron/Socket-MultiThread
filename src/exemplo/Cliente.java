@@ -24,6 +24,7 @@ public class Cliente {
                 os.flush();
             }while(!"sair".equalsIgnoreCase(cmd));
         } catch (Exception e) {
+        	//commit do eclipse
             e.printStackTrace();
         }
     }

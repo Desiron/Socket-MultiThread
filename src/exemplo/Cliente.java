@@ -30,7 +30,7 @@ public class Cliente {
 						do{
 							numRead = is.read(buffer);
 							if (numRead != -1) {
-								String linha = new String(buffer, 0, numRead);
+								String linha = new String(buffer, 0, numRead, "utf-8");
 								System.out.println(linha);
 							}
 						}while(numRead != -1);

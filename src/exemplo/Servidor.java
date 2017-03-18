@@ -29,9 +29,18 @@ public class Servidor {
                         while(scan.hasNext()){
                             String linha = scan.nextLine();
                             System.out.println(linha);
+                            List<OutputStream> toRemove = new ArrayList<>();
                             for(OutputStream osUsu : saidas ){
-                            	osUsu.write(linha.getBytes("utf-8"));
-                            	osUsu.flush();
+                            	try {
+                                    osUsu.write(linha.getBytes("utf-8"));
+                                    osUsu.flush();
+                                } catch (Exception e) {
+                                    toRemove.add(osUsu);
+                                    e.printStackTrace();
+                                }
+                            }
+                            for(OutputStream osRem : toRemove){
+                                saidas.remove(osRem);
                             }
                             if("sair".equalsIgnoreCase(linha)){
                                 break;

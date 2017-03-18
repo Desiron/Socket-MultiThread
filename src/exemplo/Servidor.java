@@ -20,6 +20,7 @@ public class Servidor {
             Socket socket = server.accept();
             OutputStream os = socket.getOutputStream();
             saidas.add(os);
+            
             new Thread(){
                 public void run() {
                     try {

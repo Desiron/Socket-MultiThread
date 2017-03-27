@@ -10,6 +10,7 @@ public class Cliente {
     //desenvolvimento
     //outro desenvolvimento
     //outra linha
+    //nova linha
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Servidor:");

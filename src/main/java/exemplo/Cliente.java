@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.util.Scanner;
-
+//web
 public class Cliente {
     //desenvolvimento
     //outro desenvolvimento

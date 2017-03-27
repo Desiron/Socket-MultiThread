@@ -1,5 +1,6 @@
 package exemplo;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.ServerSocket;
@@ -15,6 +16,7 @@ public class Servidor {
     	List<OutputStream> saidas = new ArrayList<>();
     	
         ServerSocket server = new ServerSocket(9000);
+        FileOutputStream fos = new FileOutputStream("chamada.txt");
         while(true){
 
             Socket socket = server.accept();
@@ -28,6 +30,10 @@ public class Servidor {
                         Scanner scan = new Scanner(socket.getInputStream(), "utf-8");
                         while(scan.hasNext()){
                             String linha = scan.nextLine();
+                            if(linha.contains("presente")){
+                                fos.write((linha + "\n").getBytes("utf-8"));
+                                fos.flush();
+                            }
                             System.out.println(linha);
                             List<OutputStream> toRemove = new ArrayList<>();
                             for(OutputStream osUsu : saidas ){

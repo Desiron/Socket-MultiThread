@@ -20,6 +20,7 @@ public class Cliente {
     //l5
     //a6
     //l6
+    //a7	
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Servidor:");

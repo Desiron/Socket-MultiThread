@@ -6,7 +6,10 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.util.Scanner;
 public class Cliente {
+
     //outro exemplo
+    //desenvolvimento
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Servidor:");

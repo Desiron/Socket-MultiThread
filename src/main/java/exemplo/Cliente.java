@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Cliente {
     
     //commit 1
+    //linha2
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Servidor:");

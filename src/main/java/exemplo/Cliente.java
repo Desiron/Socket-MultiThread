@@ -5,23 +5,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.util.Scanner;
-//web
 public class Cliente {
-    //desenvolvimento
-    //outro desenvolvimento
-    //outra linha
-    //nova linha
-    //l1 aaa
-    //l2
-    //l3
-    //a4
-    //l4
-    //a5
-    //l5
-    //a6
-    //l6
-    //a7	
-    //l7
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Servidor:");

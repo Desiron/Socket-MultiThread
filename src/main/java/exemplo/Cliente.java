@@ -21,6 +21,7 @@ public class Cliente {
     //a6
     //l6
     //a7	
+    //l7
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Servidor:");
